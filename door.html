@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoorCraft - Premium Door Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #777;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #eaeaea, #dcdcdc);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        .btn {
+            background: #333;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #555;
+        }
+
+        .products {
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .products h3 {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .product-card h4 {
+            margin: 15px 0 5px;
+        }
+
+        .product-card p {
+            margin-bottom: 15px;
+            color: #777;
+        }
+
+        .about {
+            background: #eaeaea;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            color: #555;
+            font-size: 18px;
+        }
+
+        .contact {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DoorCraft</h1>
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Premium Quality Doors for Every Home</h2>
+    <p>Explore our collection of stylish, secure, and durable doors crafted to enhance your living space.</p>
+    <button class="btn">Shop Now</button>
+</section>
+
+<section id="products" class="products">
+    <h3>Our Collection</h3>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Classic Wooden Door">
+            <h4>Classic Wooden Door</h4>
+            <p>$250</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1582582429416-5e36b5b9d1b4" alt="Modern Glass Door">
+            <h4>Modern Glass Door</h4>
+            <p>$420</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1598300056393-4aac492f6a4b" alt="Steel Security Door">
+            <h4>Steel Security Door</h4>
+            <p>$380</p>
+            <button class="btn">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h3>Why Choose DoorCraft?</h3>
+    <p>
+        We provide top-quality doors designed with precision and durability in mind. Our products combine security, elegance, and affordability to give your home the perfect entrance.
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <h3>Get in Touch</h3>
+    <p>Phone: +1 (234) 567-890</p>
+    <p>Email: support@doorcraft.com</p>
+</section>
+
+<footer>
+    <p>© 2026 DoorCraft. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
